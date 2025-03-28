@@ -1,0 +1,60 @@
+{
+  "name": "@tecfinite/vlmodel",
+  "version": "1.0.0",
+  "description": "Model class for Vue.js applications working with Laravel backend",
+  "author": "Tecfinite",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "tsup --config tsup.config.ts",
+    "test": "vitest",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src/**/*.ts"
+  },
+  "peerDependencies": {
+    "axios": ">=1.8.4",
+    "luxon": ">=3.6.0",
+    "pinia": ">=3.0.1",
+    "vue": ">=3.5.13"
+  },
+  "devDependencies": {
+    "@types/luxon": "^3.4.2",
+    "@types/node": "^22.13.13",
+    "@typescript-eslint/eslint-plugin": "^8.28.0",
+    "@typescript-eslint/parser": "^8.28.0",
+    "axios": "^1.8.4",
+    "eslint": "^8.57.1",
+    "luxon": "^3.6.0",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.9",
+    "vue": "^3.5.13"
+  },
+  "keywords": [
+    "Vuejs",
+    "Vue",
+    "Model",
+    "Laravel"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tecfinite/vlmodel.git"
+  },
+  "homepage": "https://github.com/tecfinite/vlmodel#readme",
+  "bugs": {
+    "url": "https://github.com/tecfinite/vlmodel/issues"
+  },
+  "license": "MIT"
+}
